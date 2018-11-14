@@ -4,14 +4,23 @@
       <img class="theodo-logo" alt="Theodo logo" src="./assets/theodo-logo.png">
       <img class="vue-logo" alt="Vue logo" src="./assets/vue-logo.png">
     </div>
-  </div>
+
+        <cell isAlive="true" ></cell>
+    </div>
 </template>
 
 <script>
+import cell from './cell.vue'
 
 export default {
-  name: 'GameOfLife'
+  name: 'GameOfLife' ,
+  components:{
+    cell
+  }
 }
+
+
+
 </script>
 
 <style>
